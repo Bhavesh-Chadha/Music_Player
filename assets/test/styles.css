@@ -1,0 +1,41 @@
+:root{
+    --playerbar-text-color:white;
+    --playerbar-background-color:#1F2937;
+}
+body{
+    margin:0px;
+
+}
+audio{
+    width:100%;
+}
+.player-bar{
+    display:grid;
+    padding:15px;
+    grid-template-rows: 100px;
+    grid-template-columns: 100px auto auto;
+    background-color: burlywood;
+    align-items: center;
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    color: var(--playerbar-text-color);
+    background-color: var(--playerbar-background-color)
+}
+.player-image{
+    height:80px;
+    width: 80px;
+}
+.image-icon-div{
+    justify-self: end;
+    padding: 15px;
+}
+.image-icon{
+    font-size: 25px;
+}
+.image-icon-play{
+    /* font-size: 25px; */
+}
+.opacity{
+    opacity:0
+}
