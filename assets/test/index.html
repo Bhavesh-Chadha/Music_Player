@@ -11,22 +11,99 @@
 </head>
 
 <body>
-    <audio src="audio1.mp3"></audio>
-    <div class="player-bar">
-        <div class="player-image">
-            <img class="player-image" src="music_img.jpg">
+
+    <!-- <audio src="audio2.mp3" controls="controls" ></audio> -->
+    <nav>
+        <h1>Music Player</h1>
+    </nav>
+    <div class="songs">
+
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
         </div>
-        <div>
-            SONG.SINGER
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
         </div>
-        <div class="image-icon-div">
-            <!-- <button><i class='bx bx-pause image-icon-pause opacity'></i> -->
-            <i class='bx bx-skip-previous image-icon'></i>
-            <i class='bx bx-play image-icon image-icon-play'></i>
-            <i class='bx bx-skip-next image-icon'></i>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
+        </div>
+        <div class="song">
+            <img src=music_img.jpg>
+            <span>Song.Singer</span>
         </div>
     </div>
-    <!-- <progress id="file" value="32" max="100"> 32% </progress> -->
+
+    <audio src="audio1.mp3"></audio>
+    <div class="player-bar-wrapper">
+        <div class="player-bar">
+
+
+            <div class="progress-bar">
+                <div class="timer">
+                    0:00
+                </div>
+
+                <!-- <progress class="progress-bar" id="file" value="0" max="100"> </progress> -->
+                <!-- <canvas class='progress-bar' width="200" height="20" style="border:1px solid green;">canvas not supported</canvas> -->
+                <div class="progress-wrapper">
+                    <div class="progress"></div>
+                    <!-- <button class="btn"></button> -->
+                </div>
+                <div class="audio-length">
+
+                </div>
+            </div>
+            <div class="player-image">
+                <img class="player-image" src="music_img.jpg">
+            </div>
+            <div class="singer-name">
+                SONG.SINGER
+            </div>
+            <div class="player-controls">
+
+                <i class='bx bx-skip-previous image-icon'></i>
+                <i class='bx bx-play image-icon player-controls-play'></i>
+                <i class='bx bx-skip-next image-icon'></i>
+            </div>
+
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 

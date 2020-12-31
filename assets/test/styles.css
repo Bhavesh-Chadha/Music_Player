@@ -1,41 +1,123 @@
 :root{
     --playerbar-text-color:white;
-    --playerbar-background-color:#1F2937;
+    --playerbar-background-color:#2B2B2B;
+    --body-background-color:#181818;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
 }
 body{
     margin:0px;
+    background-color:var(--body-background-color);
+}
+nav h1{
+    color:var(--playerbar-text-color);
+    font-size: 3rem;
+    text-align:center;
+    margin-top: 1vh;
+}
+.songs{
+    display:grid;
+    grid-template-columns:15% 15% 15% 15% 15%;
+    grid-template-rows: 250px;
+    justify-content: space-between;
+}
+.song{
+    color:white;
+}
+.song img{
+    width:100%;
+    height:220px;
 
 }
 audio{
     width:100%;
 }
+/* .player-bar-wrapper{
+    position:fixed;
+    bottom:-100%;
+} */
 .player-bar{
+    
     display:grid;
     padding:15px;
-    grid-template-rows: 100px;
+    grid-template-rows: auto auto;
     grid-template-columns: 100px auto auto;
-    background-color: burlywood;
     align-items: center;
     position: fixed;
     width:100%;
     bottom: 0;
     color: var(--playerbar-text-color);
-    background-color: var(--playerbar-background-color)
+    background-color: var(--playerbar-background-color);
+    row-gap:10px;
+    column-gap: 5px;
+    
 }
 .player-image{
     height:80px;
     width: 80px;
+    grid-row:1/3;
 }
-.image-icon-div{
-    justify-self: end;
+.player-controls{
+    font-size: 25px;
+    grid-row:2/3;
+}
+
+.singer-name{
+    grid-row:2/3;
+    justify-self: center;
     padding: 15px;
 }
-.image-icon{
-    font-size: 25px;
+.player-controls-play{
+    grid-row:1/2;
+    color:white;
+    
 }
-.image-icon-play{
-    /* font-size: 25px; */
+
+.progress-bar{
+    display:flex;
+    justify-self: center;
+    width: 80%;
+    grid-row-start:1;
+    grid-row-end: 2;
+    grid-column-start:2;
+    grid-column-end: 4;
+    /* justify-content: space-between; */
+    /* color:black; */
+    color: var(--playerbar-text-color);
+
+    border-radius: none;
+}
+.progress-wrapper{
+    border:1px white solid;
+    border-radius:8px;
+    /* display:inline-block; */
+    width:80%;
+    height:7px;
+}.progress{
+   background-color:white;
+   width:0%;
+   height: 5px;
+   padding:0px;
+   /* display: inline-block; */
+}
+.btn{
+    position: absolute;
+    width:20px;
+    border:3px green solid;
 }
 .opacity{
     opacity:0
+}
+.timer{
+    background-color: var(--playerbar-background-color);
+    border:none;
+    margin-right: 10px;
+    /* justify-self: end; */
+}
+.audio-length{
+    background-color: var(--playerbar-background-color);
+    border:none;
+    margin-left: 10px;
+    /* justify-self: end; */
 }
